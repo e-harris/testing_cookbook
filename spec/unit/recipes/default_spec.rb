@@ -21,9 +21,6 @@ describe 'testing_cookbook::default' do
     expect(chef_run).to install_package 'python3-pip'
   end
 
-  # it 'Should run requirements.txt', :skip do
-  #   expect(chef_run).to pip3install '/home/ubuntu/requirements.txt'
-  # end
 
   it "Should create a Downloads directory" do
     expect(chef_run).to create_directory '/home/ubuntu/Downloads'
