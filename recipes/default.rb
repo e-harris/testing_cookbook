@@ -10,6 +10,7 @@ end
 
 package 'python3-pip'
 
+package 'default-jdk'
 
 file '/home/ubuntu/requirements.txt' do
   mode '0777'
