@@ -1,0 +1,3 @@
+source 'https://supermarket.chef.io'
+
+cookbook 'testing_cookbook', git: 'git@github.com:e-harris/testing_cookbook.git'
