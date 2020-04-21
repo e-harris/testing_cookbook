@@ -28,10 +28,6 @@ describe package 'packer' do
   it { should be_installed }
 end
 
-describe package 'chef' do
-  it { should be_installed }
-end
-
 describe file '/usr/local/lib/python3.6/dist-packages/atomicwrites' do
   it { should exist }
 end

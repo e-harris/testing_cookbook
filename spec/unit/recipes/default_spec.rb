@@ -30,10 +30,6 @@ describe 'testing_cookbook::default' do
     expect(chef_run).to install_package 'packer'
   end
 
-  it "Should install Chef" do
-    expect(chef_run).to install_package 'chef'
-  end
-
   it "Should download Java" do
     expect(chef_run).to install_package 'default-jdk'
     expect(chef_run).to install_package 'default-jre'
