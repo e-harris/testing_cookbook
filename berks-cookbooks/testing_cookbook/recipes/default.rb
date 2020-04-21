@@ -14,10 +14,6 @@ package 'default-jdk'
 
 package 'default-jre'
 
-package 'packer'
-
-package 'chef'
-
 file '/home/ubuntu/requirements.txt' do
   mode '0777'
   action :create_if_missing

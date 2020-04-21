@@ -26,6 +26,13 @@ describe 'testing_cookbook::default' do
     expect(chef_run).to create_directory '/home/ubuntu/Downloads'
   end
 
+  it "Should install Packer" do
+    expect(chef_run).to install_package 'packer'
+  end
+
+  it "Should install Chef" do
+    expect(chef_run).to install_package 'chef'
+  end
 
   it "Should download Java" do
     expect(chef_run).to install_package 'default-jdk'
