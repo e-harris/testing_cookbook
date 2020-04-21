@@ -29,5 +29,6 @@ describe 'testing_cookbook::default' do
 
   it "Should download Java" do
     expect(chef_run).to install_package 'default-jdk'
+    expect(chef_run).to install_package 'default-jre'
   end
 end

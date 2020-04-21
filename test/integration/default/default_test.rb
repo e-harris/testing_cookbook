@@ -20,6 +20,10 @@ describe package 'default-jdk' do
   it { should be_installed }
 end
 
+describe package 'default-jre' do
+  it { should be_installed }
+end
+
 
 
 

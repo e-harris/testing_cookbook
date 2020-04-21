@@ -12,6 +12,8 @@ package 'python3-pip'
 
 package 'default-jdk'
 
+package 'default-jre'
+
 file '/home/ubuntu/requirements.txt' do
   mode '0777'
   action :create_if_missing
