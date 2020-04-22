@@ -4,11 +4,17 @@
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
 
-apt_update 'update_sources' do
-  action :update
-end
+# apt_update 'update_sources' do
+#   action :update
+# end
+#
+# package 'python3-pip'
 
-package 'python3-pip'
+bash 'python3-pip' do code <<-EOL
+  sudo apt-get update
+  sudo apt-get -y install python3-pip
+  EOL
+end
 
 package 'default-jdk'
 
